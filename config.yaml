@@ -1,0 +1,26 @@
+# Dont Be Late! configuration
+# Alert filter changes take effect on the next poll cycle — no restart needed.
+
+alerts:
+  # Only fire for meetings where you've explicitly accepted the invite.
+  # Set to false to alert for tentative/unanswered meetings too.
+  require_accepted: true
+
+  # Only fire for meetings with more than one attendee (you + at least one other).
+  # Filters out personal calendar blocks and solo reminders.
+  require_multiple_attendees: false
+
+  # Open the meeting link in the default browser instead of the system handler.
+  # For Zoom this forces the web client (zoom.us/wc/join/…) rather than the desktop app.
+  # Supports: google_meet, zoom
+  open_in_browser: true
+
+gcal:
+  # How often to fetch upcoming events from Google Calendar (in seconds).
+  poll_interval_seconds: 150
+
+user:
+  # Your primary office location. Rooms matching this string (case-insensitive)
+  # are listed first in the banner and dialogue. Leave blank to show all rooms
+  # in their original order.
+  office_location: sunnyvale
