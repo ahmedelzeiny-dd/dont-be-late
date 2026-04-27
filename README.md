@@ -6,6 +6,10 @@ A macOS background daemon that makes it really hard to miss a meeting.
 - **T-1 min:** Border turns red and starts pulsing.
 - **T-0:** A critical AppleScript modal steals focus. `Enter` joins the meeting.
 
+| Yellow phase | Red alert |
+| :---: | :---: |
+| ![Yellow warning border](screenshots/yellow.png) | ![Red alert with modal](screenshots/red.png) |
+
 Reads upcoming events from Google Calendar, extracts the Zoom/Meet URL, and overlays a click-through PyQt6 window above full-screen apps and the menu bar.
 
 ## Setup
